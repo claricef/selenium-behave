@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
 from .base_page import BasePage
 
-class InventarioPage(BasePage):
+class InventarioItemPage(BasePage):
 
-    BUTTON_ADD_CART = (By.ID, "add-to-cart-sauce-labs-backpack")
+    BUTTON_ADD_CART = (By.ID, "add-to-cart")
     ICONE_ITEM_CART = (By.XPATH, "//*[@id='shopping_cart_container']/a/span")
 
     def adicionar_item_carrinho(self):
